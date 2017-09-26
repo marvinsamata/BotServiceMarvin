@@ -53,7 +53,7 @@ var bot = new builder.UniversalBot(connector);
 bot.dialog('/', [
     function (session, results, next) {
         if (!session.userData.nombre) {
-            builder.Prompts.text(session,'¿Hola, cómo te llamás?');
+            builder.Prompts.text(session,'¿Hola, cuál es tu nombre?');
         } else {
             //session.send(`Hola ${session.userData.nombre}, es un placer saludarte de nuevo.`);
             next();
