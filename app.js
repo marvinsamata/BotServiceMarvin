@@ -70,7 +70,8 @@ bot.dialog('/', [
         if(results.response.index == 0) {
             session.beginDialog('/verInfoRecurso');
         } else if(results.response.index == 1) {
-            session.beginDialog('/verTodosProyectos');
+            session.send('En este momento no podemos darte información de los proyectos. :D');
+            //session.beginDialog('/verTodosProyectos');
         }
     }
 ]);
